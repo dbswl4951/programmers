@@ -35,4 +35,4 @@ def solution(n):
                 result.append(triangle[i][j])
     return result
 
-#solution(6)
+print(solution(6))

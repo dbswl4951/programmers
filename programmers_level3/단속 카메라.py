@@ -20,4 +20,4 @@ def solution(routes):
             camera=route[1] #3-2) 카메라의 위치를 차량의 진출 지점으로 갱신
     return result
 
-#print(solution([[-20,15], [-14,-5], [-18,-13], [-5,-3]]))
+print(solution([[-20,15], [-14,-5], [-18,-13], [-5,-3]]))
