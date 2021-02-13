@@ -25,6 +25,7 @@ def solution(lines):
         times.append([start,end])
         #print(start,"///",end)
     count=0
+    print(times)
     for time in times:
         #요청량이 변하는 순간은 각 로그의 시작과 끝 부분이므로, 요청 시작/끝 부분의 count 수 검사
         count=max(count,countLog(time[0],times),countLog(time[1],times))
@@ -32,7 +33,7 @@ def solution(lines):
     return count
 
 
-'''
+
 solution(['2016-09-15 20:59:57.421 0.351s',
 '2016-09-15 20:59:58.233 1.181s',
 '2016-09-15 20:59:58.299 0.8s',
@@ -44,4 +45,3 @@ solution(['2016-09-15 20:59:57.421 0.351s',
 '2016-09-15 21:00:00.966 0.381s',
 '2016-09-15 21:00:02.066 2.62s'
 ])
-'''

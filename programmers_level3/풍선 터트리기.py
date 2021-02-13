@@ -19,5 +19,5 @@ def solution(a):
             right=a[-1-i]
     return answer if left!=right else answer-1
 
-print(solution([7,8,0,2,-5,-3]))
-print(solution([-16,27,65,-2,58,-92,-71,-68,-61,-33]))
+#print(solution([7,8,0,2,-5,-3]))
+#print(solution([-16,27,65,-2,58,-92,-71,-68,-61,-33]))

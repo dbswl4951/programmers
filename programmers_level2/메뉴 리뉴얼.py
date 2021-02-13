@@ -23,6 +23,5 @@ def solution(orders, course):
     return sorted(result)
 
 
-
 #print(solution(["ABCFG", "AC", "CDE", "ACDE", "BCFG", "ACDEH"],[2,3,4]))
 #print(solution(["ABCDE", "AB", "CD", "ADE", "XYZ", "XYZ", "ACD"],[2,3,5]))
