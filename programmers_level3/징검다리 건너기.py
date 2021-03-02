@@ -19,7 +19,6 @@ def solution(stones, k):
     start,end=1,200000000
     while start<=end:
         mid=(start+end)//2
-        print("start,end,mid::",start,end,mid)
         if check(mid,stones,k):
             end=mid-1
         else:
