@@ -7,7 +7,7 @@ def getSet(s):
         t=s[i:i+2]
         if t.isalpha():
             strList.append(t.lower())
-    return sorted(strList)
+    return strList
 
 #자카드 유사도 구하기
 def jacquard(a,b):
