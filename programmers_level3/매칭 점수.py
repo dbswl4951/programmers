@@ -4,7 +4,6 @@ import re
 def solution(word, pages):
     basicScore={}   #기본 점수
     linkedScore=defaultdict(int)    #링크 점수
-    tagParser=re.compile('a href="(.+)*"')
 
     for idx,page in enumerate(pages):
         #현재 page url 구함
