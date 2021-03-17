@@ -4,7 +4,7 @@ def solution(cacheSize, cities):
     q=[]   #캐싱 된 도시 인덱스 저장
     if cacheSize==0:
         return 5*len(cities)
-    for idx,city in enumerate(cities):
+    for city in cities:
         city=city.lower()
         #cache hit
         if city in cache:
