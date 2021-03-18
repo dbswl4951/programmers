@@ -20,7 +20,10 @@ def solution(n, stations, w):
     else: installRange.append([start,n])
 
     for install in installRange:
-        #2*w+1 : 포함 가능 한 전기 범위
+        #2*w+1 : 수용 가능 한 전기 범위
+        #a=0,b>0 : 기지국 1개면 범위 남게 수용 가능
+        #a>0,b=0 : 기지국 1개면 딱 맞게 수용 가능
+        #a>0,b>0 : a개의 기지국 + 1개의 기지국 필요
         a=(install[1]-install[0]+1)//(2*w+1)
         b=(install[1]-install[0]+1)%(2*w+1)
         result+=a
